@@ -1,5 +1,6 @@
 export default {
-    generateData: (req, res) => {
-        res.send('Data generated');
+    getData: (req, res) => {
+        const data = req.data;
+        res.send(data);
     }
 }
