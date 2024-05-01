@@ -1,0 +1,19 @@
+doctype html
+html
+    include parts/head.pug
+    body
+        h1 Données générées
+        table
+            thead
+                tr
+                    each val in data.columns
+                        th= val
+            tbody
+                each row in data
+                    tr
+                        each val in row
+                            td= val
+    include parts/footer.pug
+ 
+ 
+  

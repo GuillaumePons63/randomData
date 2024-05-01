@@ -1,8 +1,6 @@
 doctype html
 html
-    head
-        title Random Data
-        link(rel='stylesheet', href='./style.css')
+    include parts/head.pug
     body
         h1 Générateur de données
         h2 Configurer mes données
@@ -12,7 +10,4 @@ html
             input(type='number', name='rows', id='rows', value='10') 
             br          
             button(type='submit') Générer
-    footer 
-        p © 2024 - Guillaume Web
- 
-  
+    include parts/footer.pug
