@@ -2,12 +2,7 @@ doctype html
 html
     include parts/head.pug
     body
-        h1 Générateur de données
-        h2 Configurer mes données
-        form(action='/generate', method='post')
-            label(for='rows') Nombre de lignes
-            br
-            input(type='number', name='rows', id='rows', value='10') 
-            br          
-            button(type='submit') Générer
-    include parts/footer.pug
+        div(class='container')
+            h1 Générateur de données
+                include parts/userForm.pug   
+                include parts/footer.pug

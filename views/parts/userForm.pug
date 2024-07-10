@@ -1,0 +1,32 @@
+h2 Configurer mes données
+form(action='/generate', method='post')
+    div(class='row')
+        label(for='rows' class='ten columns') Nombre de lignes
+        input(type='number', name='rows', id='rows', value='10', class='u-full-width')
+    h3 Options
+    div(class='row')
+        div(class='two columns') 
+            label(for='lastName') Nom
+            input(type='checkbox', name='name', id='name', checked)
+        div(class='two columns')
+            label(for='firstName') Prénom
+            input(type='checkbox', name='firstName', id='firstName', checked)
+        div(class='two columns')
+            label(for='email') Email
+            input(type='checkbox', name='email', id='email', checked)
+        div(class='two columns')
+            label(for='phone') Téléphone
+            input(type='checkbox', name='phone', id='phone', checked)
+        div(class='two columns')
+            label(for='city') Ville
+            input(type='checkbox', name='city', id='city', checked)
+        div(class='two columns')
+            label(for='country') Pays
+            input(type='checkbox', name='country', id='country', checked)        
+    button(type='submit' class='button-primary') Générer
+
+    //- label(for='address') Adresse
+    //- input(type='checkbox', name='address', id='address', checked)
+
+    //- label(for='zip') Code postal
+    //- input(type='checkbox', name='zip', id='zip', checked)
