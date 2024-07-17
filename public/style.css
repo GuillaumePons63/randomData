@@ -1,4 +1,10 @@
-/* body {
+body {
     background-color: black;
     color: white;
-} */
+}
+
+.d-flex-evenly {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}

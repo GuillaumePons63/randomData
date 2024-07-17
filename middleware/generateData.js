@@ -9,6 +9,7 @@ const generateData = (req, res, next) => {
     }
     data.columns = ['First Name', 'Last Name', 'Email', 'Phone', 'Country'];
     req.data = data;
+    req.session.data = data;
     next();
 }
 

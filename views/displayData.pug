@@ -2,6 +2,9 @@ doctype html
 html
     include parts/head.pug
     body(class='container')
+        div(class='row d-flex-evenly')            
+            a(class='button button-primary four columns' href="/ddlcsv") Télécharger en CSV            
+            a(class='button button-primary four columns' href="/ddljson") Télécharger en JSON
         h1 Données générées
         table(class='u-full-width')
             thead
