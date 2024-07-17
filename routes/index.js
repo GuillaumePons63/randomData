@@ -22,6 +22,10 @@ router.get('/ddlcsv', async (req, res, next) => {
         dataController.getCsv(req, res)
 })
 
+router.get('/ddljson', (req, res) => {
+    dataController.getJson(req, res)
+})
+
 export default router;
 
 
