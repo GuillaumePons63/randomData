@@ -12,3 +12,7 @@ body {
 input {
     color: black;
 }
+
+.text-center {
+    text-align: center;
+}
