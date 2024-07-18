@@ -1,6 +1,6 @@
 export default {
     getData: (req, res) => {
-        const data = req.data;
+        const data = req.session.data;
         res.render('displayData', { data });
     },
     getCsv: (req, res) => {
